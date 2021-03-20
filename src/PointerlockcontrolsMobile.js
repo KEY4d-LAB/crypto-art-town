@@ -1,5 +1,3 @@
-//original pointerlockcontrols code from https://threejs.org/examples/#misc_controls_pointerlock
-
 
 import {
 	Euler,
