@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js - pointerlock controls</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<script src="https://kit.fontawesome.com/6c2b708adc.js" crossorigin="anonymous"></script>
+		<style>
+			#blocker {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color:transparent;
+			}
+
+			#instructions {
+				width: 100%;
+				height: 100%;
+
+				display: -webkit-box;
+				display: -moz-box;
+				display: box;
+
+				-webkit-box-orient: horizontal;
+				-moz-box-orient: horizontal;
+				box-orient: horizontal;
+
+				-webkit-box-pack: center;
+				-moz-box-pack: center;
+				box-pack: center;
+
+				-webkit-box-align: center;
+				-moz-box-align: center;
+				box-align: center;
+
+				color: #ffffff;
+				text-align: center;
+				font-family: Arial;
+				font-size: 14px;
+				line-height: 24px;
+
+				cursor: pointer;
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		
+	</head>
+	<body>  
+		
+		<div id="blocker">
+    
+			<div id="instructions">
+		
+				<span style="font-size:36px">Click to play</span>
+				<br /><br />
+				Move: WASD<br/>
+				Jump: SPACE<br/>
+				Look: MOUSE
+			</div>
+		</div>
+		 <div class="arrows">
+			<p id="controller-forward"><i class="fal fa-arrow-circle-up"></i></p>
+			<p id="controller-right"><i class="fal fa-arrow-circle-right"></i></p>
+			<p id="controller-back" ><i class="fal fa-arrow-circle-down"></i></p>
+			<p id="controller-left"><i class="fal fa-arrow-circle-left"></i></p>
+		</div> 
+			<script>
+
+				var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+				if (isMobile) {
+					document.getElementById("instructions").style.display = "none";
+					document.getElementById("blocker").style.display = "none";
+				}
+				</script>
+	
+	</body>
+</html>
