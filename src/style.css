@@ -6,6 +6,7 @@ body {
 	font-size: 13px;
 	line-height: 24px;
 	overscroll-behavior: none;
+	
 }
 
 a {
@@ -88,6 +89,7 @@ body{
 	cursor: pointer;
 }
 
+
 #notSupported {
 	width: 50%;
 	margin: auto;
@@ -114,9 +116,8 @@ body{
 
 #controller-back {
 	position: fixed;
-	bottom: 8px;
 	right: 60px;
-	bottom: 0px;
+	bottom: 2px;
 	font-size: 40px;
 	color: #c4c4c4;
 }
